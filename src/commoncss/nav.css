@@ -1,133 +1,740 @@
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 38%;
+  transform: translateX(-50x);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+.nav a:hover {
+  background: rgba(0, 0, 0, 0, 3);
+}
+
+.nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.play-pause {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1rem;
+  z-index: 2;
+  position: fixed;
+  left: 55%;
+  transform: translateX(-50x);
+  bottom: 6rem;
+  display: flex;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.play-pause button {
+  background: transparent;
+  display: flex;
+  color: gray;
+  border: none;
+  outline: none;
+}
+
+.play-button button:hover,
+button:focus {
+  outline: none;
+}
+
+.play-button *:focus {
+  outline: 0 !important;
+}
+
+@media screen and (max-width: 1668px) {
+  .nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
-    left: 38%;
+    left: 40%;
     transform: translateX(-50x);
     bottom: 2rem;
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
-}
+    transition: var(--transition);
+  }
 
-.nav a {
+  .nav a {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
     font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 60%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
 }
 
-.nav a:hover {
-    background: rgba(0, 0, 0, 0,3);
+@media screen and (max-width: 1568px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 40%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 63%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
 }
 
-.nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
+@media screen and (max-width: 1320px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 37%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 62%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-    .nav {
-        background: rgba(0, 0, 0, 0.3);
-        width: max-content;
-        display: block;
-        padding: 0.7rem 1.7rem;
-        z-index: 2;
-        position: fixed;
-        left: 30%;
-        transform: translateX(-50x);
-        bottom: 2rem;
-        display: flex;
-        gap: 0.8rem;
-        border-radius: 3rem;
-        backdrop-filter: blur(15px);
-        transition: var(--transition);
-    }
-    
-    .nav a {
-        background: transparent;
-        padding: 0.9rem;
-        border-radius: 50%;
-        display: flex;
-        color: var(--color-light);
-        font-size: 1rem;
-        transition: var(--transition);
-    }
-    
+@media screen and (max-width: 1140px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 35%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 65%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
 }
 
+@media screen and (max-width: 960px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 32%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 68%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 27%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 70%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 25%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 75%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
+}
 /* ======= media queries (Small Devices) ==== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 20%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
 
-    .nav {
-        background: rgba(0, 0, 0, 0.3);
-        width: max-content;
-        display: block;
-        padding: 0.7rem 1.7rem;
-        z-index: 2;
-        position: fixed;
-        left: 6%;
-        transform: translateX(-50x);
-        bottom: 2rem;
-        display: flex;
-        gap: 0.8rem;
-        border-radius: 3rem;
-        backdrop-filter: blur(15px);
-        transition: var(--transition);
-    }
-    
-    .nav a {
-        background: transparent;
-        padding: 0.9rem;
-        border-radius: 50%;
-        display: flex;
-        color: var(--color-light);
-        font-size: 1rem;
-        transition: var(--transition);
-    }
-    
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 75%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
+}
+@media screen and (max-width: 476px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 15%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 82%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 10%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 82%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
 }
 
 /* ======= media queries (Small Devices) ==== */
 
 @media screen and (max-width: 400px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 5%;
+    transform: translateX(-50x);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+  }
 
-    .nav {
-        background: rgba(0, 0, 0, 0.3);
-        width: max-content;
-        display: block;
-        padding: 0.7rem 1.7rem;
-        z-index: 2;
-        position: fixed;
-        left: 4%;
-        transform: translateX(-50x);
-        bottom: 2rem;
-        display: flex;
-        gap: 0.8rem;
-        border-radius: 3rem;
-        backdrop-filter: blur(15px);
-        transition: var(--transition);
-    }
-    
-    .nav a {
-        background: transparent;
-        padding: 0.9rem;
-        border-radius: 50%;
-        display: flex;
-        color: var(--color-light);
-        font-size: 1rem;
-        transition: var(--transition);
-    }
+  .nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-pause {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 85%;
+    transform: translateX(-50x);
+    bottom: 7rem;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .play-pause button {
+    background: transparent;
+    display: flex;
+    color: gray;
+    border: none;
+    outline: none;
+  }
+
+  .play-button button:hover,
+  button:focus {
+    outline: none;
+  }
+
+  .play-button *:focus {
+    outline: 0 !important;
+  }
 }
-

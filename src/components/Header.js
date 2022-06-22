@@ -53,6 +53,8 @@ const Header = ({ audioElem, isPlaying, setIsPlaying }) => {
         >
           <BiMessageSquareDetail />
         </a>
+      </div>
+      <div className="play-pause">
         <button>
           {isPlaying ? (
             <BiPauseCircle onClick={PlayPause} />
