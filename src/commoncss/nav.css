@@ -8,7 +8,7 @@ html {
   padding: 0.7rem 1.7rem;
   z-index: 2;
   position: fixed;
-  left: 38%;
+  left: 41%;
   transform: translateX(-50x);
   bottom: 2rem;
   display: flex;
@@ -42,9 +42,9 @@ html {
   padding: 0.7rem 1rem;
   z-index: 2;
   position: fixed;
-  left: 55%;
+  left: 58%;
   transform: translateX(-50x);
-  bottom: 6rem;
+  bottom: 7rem;
   display: flex;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
