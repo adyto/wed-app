@@ -5,7 +5,6 @@ import "./App.css";
 import Header from "./components/Header";
 import WeadingDate from "./components/WeadingDate";
 import CountDown from "./components/CountDown";
-// import WeadingDetails from './components/weading/WeadingDetails2';
 import Invitation from "./components/Invitation";
 import Weadingloaction from "./components/Weadingloaction";
 import Contact from "./components/Contact";
@@ -15,6 +14,8 @@ import Amplop from "./components/Amplop";
 import Privasi from "./components/Privasi";
 
 import audioSrc from "../src/audio/westlife.mp3";
+import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 import { useState } from "react";
 
@@ -54,10 +55,11 @@ const App = () => {
         <Invitation />
         <Weadingloaction />
         <Maps />
-        {/* <WeadingDetails /> */}
+        <Gallery />
         <Amplop />
         <Privasi />
         <Contact />
+        <Footer />
       </div>
     </>
   );
